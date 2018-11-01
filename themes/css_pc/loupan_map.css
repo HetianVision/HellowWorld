@@ -1,0 +1,101 @@
+
+
+/*问房海外-PC站-地图找房*/
+/*=======================================================================*/
+/*loupan_map*/
+
+.allscreem-map{width:100%; height:100%; display:block; overflow:hidden;}
+
+/*头部导航*/
+.map-head{width:100%; min-width:1280px; height:61px; display:block; position:absolute; top:0; z-index:999999; padding:0 0 0 24px; border-bottom:1px solid #e8e8ea;}
+.head-log{width:160px; height:40px; display:block; float:left; margin:10px 0;}
+.head-nav{width:auto; height:60px; display:block; float:right; list-style:none; margin:0; padding:0;}
+.head-nav>li{width:96px; height:60px; display:block; float:left; text-align:center; line-height:60px; position:relative;}
+.head-nav>li.current:before{content:''; width:32px; height:4px; display:block; position:absolute; left:32px; top:0; background:#3271f8;}
+.head-nav>li:hover:before{content:''; width:32px; height:4px; display:block; position:absolute; left:32px; top:0; background:#3271f8;}
+.head-nav>li>a{color:#223;}
+.secondnav{width:100%; max-height:0; perspective:400px; -webkit-perspective:400px; -o-perspective:400px; -ms-perspective:400px; -moz-perspective:400px;}
+.secondnav>a{width:100%; height:40px; display:block; line-height:40px; text-align:center; transition:all ease .5s; -webkit-transition:all ease .5s;-moz-transition:all ease .5s; -o-transition:all ease .5s; -ms-transition:all ease .5s; opacity:0; margin-top:1px;color:#223;}
+.secondnav a:nth-child(1){transform:rotateY(90deg); -webkit-transition-delay: 0s; -moz-transition-delay: 0s; -ms-transition-delay: 0s; -o-transition-delay: 0s; transition-delay: 0s; }
+.secondnav a:nth-child(2){transform:rotateY(90deg); -webkit-transition-delay:50ms; -moz-transition-delay:50ms; -ms-transition-delay:50ms; -o-transition-delay:50ms; transition-delay:50ms;}
+.secondnav a:nth-child(3){transform:rotateY(90deg); -webkit-transition-delay:100ms; -moz-transition-delay:100ms; -ms-transition-delay:100ms; -o-transition-delay:100ms; transition-delay:100ms;}
+.secondnav a:nth-child(4){transform:rotateY(90deg); -webkit-transition-delay:150ms; -moz-transition-delay:150ms; -ms-transition-delay:150ms; -o-transition-delay:150ms; transition-delay:150ms;}
+.secondnav a:nth-child(5){transform:rotateY(90deg); -webkit-transition-delay:200ms; -moz-transition-delay:200ms; -ms-transition-delay:200ms; -o-transition-delay:200ms; transition-delay:200ms;}
+.secondnav a:nth-child(6){transform:rotateY(90deg); -webkit-transition-delay:250ms; -moz-transition-delay:250ms; -ms-transition-delay:250ms; -o-transition-delay:250ms; transition-delay:250ms;}
+.secondnav a:nth-child(7){transform:rotateY(90deg); -webkit-transition-delay:300ms; -moz-transition-delay:300ms; -ms-transition-delay:300ms; -o-transition-delay:300ms; transition-delay:300ms;}
+.secondnav a:hover { background-color:#3271f8; color:#fff;}
+.head-nav>li:hover .secondnav { max-height:2000px;}
+.head-nav>li:hover .secondnav a { transform:rotateY(0); -webkit-transform:rotateY(0); -moz-transform:rotateY(0); -o-transform:rotateY(0); -ms-transform:rotateY(0); opacity:0.95;}
+
+
+/*头部工具栏*/
+.head-toolbar{width:100%; min-width:1280px; height:56px; display:block; position:absolute; top:61px; left:0; z-index:999999; padding: 0 24px;}
+.search-screen{width:auto; height:32px; display:block; float:left; margin:12px 0;}
+.search{width:auto; height:32px; display:block; float:left;}
+.search input[type=text]{width:320px; height:32px; display:block; float:left; line-height:30px; border:1px solid #e8e8ea; border-right:none; border-radius:4px 0 0 4px; outline:none;}
+.search input[type=button]{width:80px; height:32px; display:block; float:left; line-height:32px; text-align:center; border-radius:0 4px 4px 0; border:none; outline:none;}
+.screen{width:auto; height:32px; display:block; float:left;}
+.screen-dropdown{width:136px; height:32px; display:block; float:left;}
+.dropbtn{width:100%; height:32px; border:none; cursor:pointer; padding:0 15px; text-align:left; border:1px solid #e8e8ea; background:url(../img_pc/map_dropdown_arr.png) 112px 50% no-repeat; outline:none; border-radius:4px;}
+.dropdown-con{width:100%; height:auto; max-height:480px; overflow-y:auto; display:none; border:1px solid #e8e8ea; border-top:none; position:relative; z-index:1;  border-radius:0 0 4px 4px;}
+.dropdown-con a{height:32px; line-height:32px; display:block; padding: 0 15px;}
+.dropdown-con a:hover{background-color:#eaf1fe; color:#3271f8;}
+.screen-dropdown:hover .dropdown-con{display:block;}
+.screen-dropdown:hover .dropbtn{border-radius:4px 4px 0 0;}
+
+.loupanname-screentab{width:auto; height:32px; display:block; float:left; margin:12px 0;}
+.loupanname-screentab h3{width:auto; height:32px; line-height:32px; display:block; float:left;}
+.screentab{width:auto; height:32px; display:block; float:left; line-height:30px;}
+.screentab a{width:auto; height:32px; display:block; padding:0 8px; float:left; border-radius:4px; border:1px solid #e8e8ea;}
+.screentab a.current,.screentab a:hover{background:#3271f8; color:#fff;  border:1px solid #3271f8;}
+
+.right-btn{width:auto; height:32px; display:block; float:right; margin:12px 0;}
+.right-btn a{width:auto; height:32px; display:block; float:left; line-height:32px; padding-left:24px;}
+.right-btn a.area{background:url(../img_pc/map_area.png) left 50% no-repeat;}
+.right-btn a.area.current{background:url(../img_pc/map_area_blue.png) left 50% no-repeat; color:#3271f8;}
+.right-btn a.metro{background:url(../img_pc/map_metro.png) left 50% no-repeat;}
+.right-btn a.metro.current{background:url(../img_pc/map_metro_blue.png) left 50% no-repeat; color:#3271f8;}
+
+
+.mapshow{width:100%; min-width:1280px; height:100%; display:block; overflow:hidden; padding-top:117px; position:relative;}
+.search-resault{width:524px; height:calc(100% - 149px); display:block; position:absolute; top:133px; left:0; z-index:999999; padding:0 16px;}
+.resault-switch{width:32px; height:64px; display:block; position:absolute; top:50%; margin-top:-32px; right:-32px; border-radius:0 4px 4px 0;}
+.resault-switch.show{background:url(../img_pc/map_resault_switch_hide_arr.png) 50% 50% no-repeat #fff;}
+.resault-switch.hide{background:url(../img_pc/map_resault_switch_show_arr.png) 50% 50% no-repeat #fff;}
+.resault-header{width:calc(100% - 16px); height:41px; display:block; border-bottom:1px solid #e8e8ea; line-height:40px; position:absolute; top:16px; left:8px;}
+.resault-header h4{ float:left;}
+.resault-header .sortbar{width:auto; height:40px; display:block; float:right;}
+.resault-header .sortbar a{width:auto; height:40px; line-height:40px; display:block; float:left;}
+.resault-header .sortbar a.current,.resault-header .sortbar a.current:hover{color:#3271f8; font-weight:bold;}
+.resault-header .sortbar a:hover{color:#3271f8;}
+/*楼盘列表*/
+.loupan-list-con{width:100%; height:100%; display:block; overflow:hidden; position:relative; padding-top:57px;}
+.loupan-list{width:100%; height:100%; display:block; overflow:hidden; overflow-y:auto; padding:0 8px;}
+.loupan-item{width:100%; height:165px; display:block; padding:24px 0 24px 176px; position:relative; border-bottom:1px solid #e8e8ea;}
+.loupan-item>a.img{width:160px; height:116px; display:block; overflow:hidden; position:absolute; left:0; top:24px;}
+.loupan-item>a.img img{width:100%; height:auto; display:block;}
+.loupan-item>h4{width:100%; height:28px; display:block; line-height:28px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.loupan-item>p{width:100%; height:26px; display:block; line-height:26px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.loupan-item>p>span{width:auto; height:26px; display:block; float:left;}
+.loupan-item>p>i{width:16px; height:26px; display:block; float:left; text-align:center; line-height:22px;}
+.loupan-item>div{width:100%; height:24px; display:block; line-height:24px; overflow:hidden;}
+.loupan-item>div>span{width:auto; height:24px; display:block; float:left; padding:0 8px;}
+.loupan-item>div>span:last-of-type{margin:0;}
+.loupan-item>a.price{width:100%; height:30px; display:block; line-height:30px;}
+
+/*配套列表*/
+.match-list-con{width:100%; height:100%; display:block; overflow:hidden; position:relative; padding-top:57px;}
+.match-list{width:100%; height:100%; display:block; overflow:hidden; overflow-y:auto; padding:0 8px;}
+.match-item{width:100%; height:auto; display:block; overflow:hidden; padding:24px 0 24px 32px; position:relative; border-bottom:1px solid #e8e8ea;}
+.match-item:before{content:''; width:28px; height:28px; display:block; position:absolute; top:24px; left:0;}
+.match-item.target:before{background:url(../img_pc/map_tag_target.png) left 50% no-repeat;}
+.match-item.main:before{background:url(../img_pc/map_tag_main.png) left 50% no-repeat;}
+.match-item.orther:before{background:url(../img_pc/map_tag_orther.png) left 50% no-repeat;}
+.match-item h4{width:calc(100% - 120px); height:auto; display:block; float:left; line-height:28px;}
+.match-item.target h4{width:100%;}
+.match-item span{width:80px; height:28px; display:block; line-height:28px; float: right; text-align:right;}
+.match-item.target span{display:none;}
+.match-item p{width:100%; height:auto; display:block; float:left; line-height:24px;}
+/*全屏地图*/
+.mapcon{width:100%; height:100%; display:block;}
+

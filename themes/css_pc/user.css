@@ -1,0 +1,49 @@
+
+/*问房海外-PC站-用户中心-收藏-分享-足迹-消息*/
+/*=======================================================================*/
+/*user_collect、user_share、user_trace、user_notice*/
+
+
+.baike{}
+
+/*左侧对比项导航*/
+
+.left-nav{width:240px; height:auto; display:block; float:left; text-align:center; padding:0 24px 40px 24px;}
+.user-headpic{width:192px; height:auto; display:block; float:left; padding:40px 0;}
+.user-headpic i{width:96px; height:96px; display:block; overflow:hidden; margin:0 auto; border-radius:96px;}
+.user-headpic span{width:100%; height:28px; display:block; line-height:28px;}
+.left-nav ul{width:192px; height:auto; display:block; float:left; overflow:hidden; list-style:none;}
+.left-nav ul li{width:192px; height:40px; display:block; line-height:40px; text-align:center; margin-bottom:16px;}
+.left-nav ul li.current,.left-nav ul li.current:hover{color:#3271f8; background:url(../img_pc/left_nav_arr_blue.png) 168px 50% no-repeat #eaf1fe}
+.left-nav ul li:hover{color:#3271f8; background:#eaf1fe;}
+
+/*右侧内容*/
+.right-con{width:936px; height:auto; display:block; float:left; overflow:hidden; padding:0 24px; border-top:2px solid #223;}
+.right-con>h3{width:100%; height:73px; display:block; padding:24px 0 8px 0; border-bottom:1px solid #e8e8ea;}
+.right-con>h3>span{width:80px; height:auto; display:block; float:left; margin-right:40px; text-align:center; position:relative;}
+.right-con>h3>span.current{ color:#3271f8; font-weight:bold;}
+.right-con>h3>span.current:before{content:''; width:100%; height:2px; display:block; position:absolute; bottom:-25px; left:0; background:#3271f8;}
+
+/*收藏列表-分享列表-足迹列表*/
+.my-list-con , .list-con , .dataset-con{width:100%; height:auto; display:block; overflow:hidden; list-style:none;}
+
+/*消息列表*/
+.notice-item{width:100%; height:auto; display:block; overflow:hidden; position:relative; border-bottom:1px solid #e8e8ea; padding:24px 0;}
+.notice-item p:first-of-type{width:100%; height:auto; display:block; float:left; line-height:30px;}
+.notice-item p:last-of-type{width:100%; height:26px; display:block; float:left; line-height:26px;}
+.notice-item p:last-of-type span{float:left;}
+.notice-item p:last-of-type a{float:right;}
+
+
+/*用户资料*/
+.dataset-con{width:100%; height:auto; display:block; overflow:hidden;}
+.dataset-item{width:100%; height:auto; display:block; overflow:hidden; float:left; padding:24px 0 24px 96px; position:relative;}
+.dataset-item span{width:96px; height:36px; display:block; line-height:36px; text-align:left; position:absolute; left:0; top:;}
+.dataset-item input[type=text]{width:320px; height:36px; display:block; float:left; padding:0 16px; line-height:24px; border:1px solid #e8e8ea;}
+.dataset-item input[readonly=readonly]{border:none;}
+.dataset-item i{width:auto; height:36px; display:block; float:left; line-height:36px;}
+.dataset-item p{width:100%; height:auto; display:block; float:left; line-height:26px;}
+.dataset-item img{width:80px; height:80px; display:block; float:left; border-radius:80px; overflow:hidden; clear:right;}
+.headpic-selectbtn{width:80px; height:24px; display:block; float:left; clear:left; border-radius:4px; text-align:center; line-height:24px; border:none;}
+.dataset-con a.postbtn{width:160px; height:40px; display:block; float:left; text-align:center; line-height:40px;}
+.checkcode-getbtn{width:120px; height:36px; display:block; float:left; line-height:34px; border:1px solid #eaf1fe; background:#f5f8ff;}

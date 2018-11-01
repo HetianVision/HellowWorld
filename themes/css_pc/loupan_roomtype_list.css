@@ -1,0 +1,35 @@
+
+
+/*问房海外-PC站-楼盘户型列表*/
+/*=======================================================================*/
+/*loupan_roomtype_list*/
+
+
+/*楼盘户型*/
+.loupan-roomtype-list{}
+.loupan-name{width:100%; height:48px; display:block; line-height:48px;}
+.roomtype-list-con{width:100%; height:auto; display:block; overflow:hidden;}
+
+/*分类分类*/
+.roomtype-kind{width:100%; height:40px; display:block; overflow:hidden;}
+.roomtype-kind{width:auto; height:40px; display:block; float:left;}
+.roomtype-kind span{width:120px; height:38px; display:block; line-height:38px; text-align:center; float:left; border-radius:4px 4px 0 0; margin-right:2px;}
+.roomtype-kind span:hover,.roomtype-kind span.current{color:#3271f8;}
+.roomtype-kind span.current{height:40px; font-weight:bold; border-bottom:2px solid #fff;}
+
+/*户型列表*/
+.roomtype-list{width:1200px; height:auto; display:block; overflow:hidden; padding:24px 24px 0 24px;}
+.list-con{}
+.roomtype-item{width:270px; height:256px; display:block; overflow:hidden; float:left; position:relative; border:1px solid #e8e8ea;}
+.roomtype-item:nth-of-type(4n+4){margin-right:0;}
+.roomtype-item i , .roomtype-item i img{width:268px; height:200px; display:block; float:left; overflow:hidden;}
+.romomtype-info{width:268px; height:54px; display:block; float:left;}
+.romomtype-info p{width:100%; display:block; padding:0 8px;}
+.romomtype-info p:nth-of-type(1){height:28px; line-height:28px;}
+.romomtype-info p:nth-of-type(2){height:26px; line-height:26px;}
+.romomtype-info p a{float:left;}
+.romomtype-info p:nth-of-type(1) a:visited,.romomtype-info p:nth-of-type(1) a:link,.romomtype-info p:nth-of-type(1) a:active{color:#223;}
+.romomtype-info p:nth-of-type(1) a:hover{color:#3271f8;}
+.romomtype-info p:nth-of-type(2) a:visited,.romomtype-info p:nth-of-type(2) a:link,.romomtype-info p:nth-of-type(2) a:active{color:#f66;}
+.romomtype-info p span{float:right;}
+.romomtype-info p span em{font-style:normal; width:16px; text-align:center; display:inline-block;}

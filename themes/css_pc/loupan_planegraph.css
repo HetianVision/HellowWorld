@@ -1,0 +1,50 @@
+
+
+/*问房海外-PC站-楼盘平面图*/
+/*=======================================================================*/
+/*loupan_planegraph*/
+
+
+/*楼盘户型*/
+.loupan-planegraph{}
+.loupan-name{width:100%; height:48px; display:block; line-height:48px;}
+
+/*平面图展示*/
+.planegraph-show{width:100%; height:auto; display:block; float:left; overflow:hidden; position:relative;}
+.planegraph-show a{width:24px; height:64px; display:block; position:absolute; top:50%; margin-top:-32px; z-index:1;}
+.planegraph-show a.prev{left:0; background:url(../img_pc/arr_x_prev_blue.png) 50% 50% no-repeat #e8e8ea;}
+.planegraph-show a.prev:hover{background:url(../img_pc/arr_x_prev_white.png) 50% 50% no-repeat #3271f8;}
+.planegraph-show a.next{right:0; background:url(../img_pc/arr_x_next_blue.png) 50% 50% no-repeat #e8e8ea;}
+.planegraph-show a.next:hover{background:url(../img_pc/arr_x_next_white.png) 50% 50% no-repeat #3271f8;}
+.planegraph-list{width:100%; height:auto; display:block; overflow:hidden; position:relative;}
+.planegraph-list div{width:100%; height:auto; display:block; position:absolute; left:0; bottom:0; background:rgba(0,0,0,0.7); padding:16px 24px;}
+.planegraph-list div h3{width:100%; height:30px; display:block; float:left; line-height:30px;}
+.planegraph-list div p{width:100%; height:auto; display:block; float:left; line-height:26px;}
+
+/*对应楼栋楼层*/
+.build-flow-con{width:100%; height:auto; display:block; float:left; overflow:hidden;}
+.build-flow-con h3{width:100%; height:56px; display:block; float:left; line-height:32px; padding:24px 24px 0 24px;}
+.build-flow-list{width:100%; height:auto; display:block; float:left; overflow:hidden; padding:24px;}
+.build-flow-list li{width:108px; height:64px; display:block; float:left; margin:0 8px 8px 0; padding:8px 16px;}
+.build-flow-list li:nth-of-type(10n+10){margin-right:0;}
+
+/*对应户型*/
+.roomtype-list-con{width:100%; height:auto; display:block; float:left; overflow:hidden;}
+.roomtype-list-con h3{width:100%; height:56px; display:block; float:left; line-height:32px; padding:24px 24px 0 24px;}
+
+/*户型列表*/
+.roomtype-list{width:1200px; height:auto; display:block; overflow:hidden; padding:24px 24px 0 24px;}
+.list-con{width:100%; height:auto; display:block; float:left; overflow:hidden;}
+.roomtype-item{width:270px; height:256px; display:block; overflow:hidden; float:left; position:relative; border:1px solid #e8e8ea;}
+.roomtype-item:nth-of-type(4n+4){margin-right:0;}
+.roomtype-item i , .roomtype-item i img{width:268px; height:200px; display:block; float:left; overflow:hidden;}
+.romomtype-info{width:268px; height:54px; display:block; float:left;}
+.romomtype-info p{width:100%; display:block; padding:0 8px;}
+.romomtype-info p:nth-of-type(1){height:28px; line-height:28px;}
+.romomtype-info p:nth-of-type(2){height:26px; line-height:26px;}
+.romomtype-info p a{float:left;}
+.romomtype-info p:nth-of-type(1) a:visited,.romomtype-info p:nth-of-type(1) a:link,.romomtype-info p:nth-of-type(1) a:active{color:#223;}
+.romomtype-info p:nth-of-type(1) a:hover{color:#3271f8;}
+.romomtype-info p:nth-of-type(2) a:visited,.romomtype-info p:nth-of-type(2) a:link,.romomtype-info p:nth-of-type(2) a:active{color:#f66;}
+.romomtype-info p span{float:right;}
+.romomtype-info p span em{font-style:normal; width:16px; text-align:center; display:inline-block;}
